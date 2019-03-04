@@ -94,7 +94,7 @@ class TrainerController extends Controller
         }
         $trainer->save();
 
-        return redirect()->route('trainers.show',[$trainer]);
+        return redirect()->route('trainers.show',[$trainer])->with('status','Entrenador actualizado correctamente');
         // return 'updated';
     }
 
@@ -113,7 +113,3 @@ class TrainerController extends Controller
         return redirect()->route('trainers.index');
     }
 }
-
-
-//Video 30
-// https://www.youtube.com/watch?v=IR7Vln9usoE&list=PLIddmSRJEJ0sxS-RmqdRMlkyWOQWvEGEt&index=30
