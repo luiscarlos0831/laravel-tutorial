@@ -10,5 +10,3 @@ class Role extends Model
         return $this->belongsToMany('LaraDex\User');
     }
 }
-
-// video 36
